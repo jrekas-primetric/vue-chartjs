@@ -1,13 +1,13 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("chart.js"));
+		module.exports = factory();
 	else if(typeof define === 'function' && define.amd)
-		define("VueChartJs", ["chart.js"], factory);
+		define("VueChartJs", [], factory);
 	else if(typeof exports === 'object')
-		exports["VueChartJs"] = factory(require("chart.js"));
+		exports["VueChartJs"] = factory();
 	else
-		root["VueChartJs"] = factory(root["Chart"]);
-})(typeof self !== 'undefined' ? self : this, function(__WEBPACK_EXTERNAL_MODULE_3__) {
+		root["VueChartJs"] = factory();
+})(typeof self !== 'undefined' ? self : this, function() {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -231,8 +231,8 @@ var reactiveProp = {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return Radar; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return Bubble; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return Scatter; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_chart_js__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_chart_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_chart_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_chart_js_latest__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_chart_js_latest___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_chart_js_latest__);
 
 function generateChart(chartId, chartType) {
   return {
@@ -294,7 +294,7 @@ function generateChart(chartId, chartType) {
       renderChart: function renderChart(data, options) {
         if (this.$data._chart) this.$data._chart.destroy();
         if (!this.$refs.canvas) throw new Error('Please remove the <template></template> tags from your chart component. See https://vue-chartjs.org/guide/#vue-single-file-components');
-        this.$data._chart = new __WEBPACK_IMPORTED_MODULE_0_chart_js___default.a(this.$refs.canvas.getContext('2d'), {
+        this.$data._chart = new __WEBPACK_IMPORTED_MODULE_0_chart_js_latest__["default"](this.$refs.canvas.getContext('2d'), {
           type: chartType,
           data: data,
           options: options,
@@ -334,7 +334,7 @@ var Scatter = generateChart('scatter-chart', 'scatter');
 /* 3 */
 /***/ (function(module, exports) {
 
-module.exports = __WEBPACK_EXTERNAL_MODULE_3__;
+throw new Error("Module parse failed: Unexpected token (6721:12)\nYou may need an appropriate loader to handle this file type.\n|         if (intermediateIndex1 !== startIndex && intermediateIndex1 !== lastIndex) {\n|           decimated.push({\n|             ...data[intermediateIndex1],\n|             x: avgX,\n|           });");
 
 /***/ })
 /******/ ]);
