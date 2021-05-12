@@ -1,4 +1,4 @@
-import Chart from 'chart.js'
+import Chart from 'chart.js-latest'
 import { generateChart } from '../BaseCharts'
 
 Chart.defaults.LineWithLine = Chart.defaults.line
